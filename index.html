@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Assets/CSS/style.css">
+    <title>Coding Assessment</title>
+</head>
+<body>
+    
+        <Section>
+            <h1 class="title">The Coding Quiz</h1>
+            <h3 class="Intro">You have 60 seconds <br> Click start to begin <br> If you answer incorrectly,you lose 10 seconds.
+                <div id="container-start">
+                    <button name="button" type="button" value="OK" id="startBtn"> START </button>
+            </div>  
+            </h3>
+        </Section>
+    <!--Used input and label functions for each possible answer. Added IDs to all the answers so i could easily get them for use in my Javascript, by making them into an array to check if the correct answer was selected-->
+   
+    <div class="timer"></div>
+    <section class="Quiz" id="q1">
+        <h2 class="question">What does HTML stand for?</h2>
+        <input id="q1a1" class="answer" type="radio" name="question1" value="Hypertext Makeup language"><label for="q1a1" class="response"> Hypertext Makeup language<br></label>
+        <input id="q1a2" class="answer" type="radio" name="question1" value="Hightext Markup language"><label for="q1a2" class="response"> Hightext Markup language<br></label>
+        <input id="q1a3" class="answer" type="radio" name="question1" value="Hypertext Markup language"><label for="q1a3" class="response"> Hypertext Markup language<br></label>
+        <input id="q1a4" class="answer" type="radio" name="question1" value="None of the above"><label for="q1a4" class="response"> None of the above<br></label>
+        <button type="submit" class="submitNext1">NEXT</button>
+
+    </section>
+
+    <section class="Quiz" id="q2">
+        <h2 class="question">What does CSS stand for?</h2>
+        <input id="q2a1" class="answer" type="radio" name="question2" value="Cascading style sheets"><label for="q2a1" class="response"> Cascading style sheets<br></label>
+        <input id="q2a2" class="answer" type="radio" name="question2" value="Core style sheets"><label for="q2a2" class="response"> Core style sheets<br></label>
+        <input id="q2a3" class="answer" type="radio" name="question2" value="Coding style sheets"><label for="q2a3" class="response"> Coding style sheets<br></label>
+        <input id="q2a4" class="answer" type="radio" name="question2" value="None of the above"><label for="q2a4" class="response"> None of the above<br></label>
+        <button type="submit" class="submitNext2">NEXT</button>
+
+    </section>
+
+    <section class="Quiz" id="q3">
+        <h2 class="question">How can you find out the length of an array?</h2>
+        <input id="q3a1" class="answer" type="radio" name="question3" value="array.length()"><label for="q3a1" class="response"> array.length()<br></label>
+        <input id="q3a2" class="answer" type="radio" name="question3" value="array.number()"><label for="q3a2" class="response"> array.number()<br></label>
+        <input id="q3a3" class="answer" type="radio" name="question3" value="array.maximum"><label for="q3a3" class="response"> array.maximum()<br></label>
+        <input id="q3a4" class="answer" type="radio" name="question3" value="array.toUpperCase()"><label for="q3a4" class="response"> array.toUpperCase<br></label>
+        <button type="submit" class="submitNext3">NEXT</button>
+
+    </section>
+
+    <section class="Quiz" id="q4">
+        <h2 class="question">What does the element.setAttribute() method do?</h2>
+        <input class="answer" type="radio" name="question4" value="Sets an attribute to the element" id="q4a1"><label class="response" for="q4a1"> Sets an attribute to specified element<br></label>
+        <input id="q4a2" class="answer"  type="radio" name="question4" value="deletes attribute"><label class="response" for="q4a2"> Deletes the attribute from the specified element<br></label>
+        <input id="q4a3" class="answer"  type="radio" name="question4" value="Alters attribute"><label class="response" for="q4a3"> Alters the current attribute in the specified element<br></label>
+        <input id="q4a4" class="answer" type="radio" name="question4" value="None of the above"><label class="response" for="q4a4"> None of the above<br></label>
+        <button type="submit" class="submitNext4">NEXT</button>
+
+    </section>
+<!--Created a final score container. This will be dynamically updated via the javascript, based on what score the individual gets-->
+    <section class="Quiz" id="finalScore">
+        <div class="row">
+            <div class="column">
+              <div class='score-column'>
+                Final Score:
+              </div>
+            </div>
+            <div class="column">
+              <div id="result">
+              </div>
+            </div>
+          </div>
+         <h3 id="submissionSection">Enter your initials and save your score
+            <section >
+                <input name='Initials' id='initial' type='text' placeholder='Initials' required>
+                <button name="button" type="button" value="OK" id="submitbtn"> SUBMIT </button>
+            </section>
+            
+         </h3> 
+    </section>
+
+    <!--This empty div, will be dynamically updated via the javascript and will be for the individual to provide their initials on finishing the quiz-->
+    <section class = Quiz id="Initials">
+        
+    </section>
+    <footer>
+            <p>
+                &lt;&lt;&lt;&copy; IMAN JAMA ❤️ &gt;&gt;&gt;
+            </p>
+    </footer>
+    <script src="Assets/script.js"></script>
+    
+</body>
+</html>
